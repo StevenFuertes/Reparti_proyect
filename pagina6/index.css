@@ -9,69 +9,72 @@ body{
     
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+ }
+
+ header h1{
+    font-size: 50px;
+    font-family: sans-serif;
+ }
+
+ header div{
+    font-size: 20px;
+    font-family: sans-serif;
+ }
+
+section {
+    background: url(/images/condominio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+
+}
+
+.seleccion_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+}
+
+.logo_Reparti{
+    background-color: yellow;
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    border: solid 1px black;
+    border-radius: 100%;
+}
+
+.logo_pedidos{
+    position: relative;
+    display: inline-block;
+    opacity: 70%;
+    width: 250px;
+}
+
+
 .logo_usuario{
     width: 50px;
 }
 
-.container_usuario {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: #426DA0;
-    color: white;
-    width: 100%
-}
-
-.container_seleccion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-}
-
-.container_seleccion img {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.logo_Reparti{
-    text-align: center;
-}
-
-.container_seleccion h3 {
-    font-size: 250%;
-}
-
-.container_pendientes {
-    background-color: #426DA0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 60px;
-    color: white;
-}
-
-.container_titulos_pendientes{
-    display: grid;
-
-}
-
-.container_data_pendientes {
-    display: grid;
-
-}
-
 footer {
     display: flex;
+    gap: 50px;
     justify-content: center;
-    font-size: 10px;
-    background-color: #426DA0;
+    align-items: center;
     color: white;
-}
-
-footer h2 {
-    margin: 10px;
+    background-color: rgb(67, 87, 124);
+    height: 60px;
 }
