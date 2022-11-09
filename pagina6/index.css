@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    
+}
+
+.logo_usuario{
+    width: 50px;
+}
+
+.container_usuario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #426DA0;
+    color: white;
+    width: 100%
+}
+
+.container_seleccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.container_seleccion img {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.logo_Reparti{
+    text-align: center;
+}
+
+.container_seleccion h3 {
+    font-size: 250%;
+}
+
+.container_pendientes {
+    background-color: #426DA0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px;
+    color: white;
+}
+
+.container_titulos_pendientes{
+    display: grid;
+
+}
+
+.container_data_pendientes {
+    display: grid;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    background-color: #426DA0;
+    color: white;
+}
+
+footer h2 {
+    margin: 10px;
+}
