@@ -1,56 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/pagina6/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/pagina6/index.css" />
 </head>
+
 <body>
     <header>
-            <h1>Club Reparti</h1>
-            <div>
-                <img class="logo_usuario" src="/images/usuario.png" alt="">
-                <h3>NOMBRE USUARIO</h3>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div class="container__logo">
+                    <a class="navbar-brand" href="#">Club Reparti</a>
+                    <img width="40px" src="/images/logo.png" alt="" />
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Como funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Reparti
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lista de Repartidores</a></li>
+                                <li><a class="dropdown-item" href="#">Ofrecer Servicio de Reparto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Emprendimientos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success" type="submit">
+                            Ingresar
+                        </button>
+                    </form>
+                </div>
             </div>
+        </nav>
     </header>
-    <section>
-        <div class="seleccion_button">
-            <!-- <div class="logo_Reparti">
-                
-                <img width="200px" src="/images/logo.png" alt="">
-                <button>Reparti's</button>
+    <div class="carrucel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="logo_pedidos">
-                
-                <img width="200px" src="/images/caja.png" alt="">
-                <button>Pedidos</button>
-            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/condominio-carr.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/llevar-pedido-carr.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/armar-pedido.jpg" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
 
-    </section>
+
     <div class="container_pendientes">
         <h2>Pendiente</h2>
         <div class="container_titulos_pendientes">
             <div>Repartidor</div>
             <div>Hora Inicio</div>
             <div>Estado</div>
-            <div>Listo!</div> 
+            <div>Listo!</div>
         </div>
         <div class="container_data_pendientes">
             <div>
                 Nombre_Repartidor
-                <img width="20px" src="/images/logo.png" alt="">
+                <img width="20px" src="/images/logo.png" alt="" />
             </div>
             <div>hora 00:00</div>
             <div>Confirmado</div>
-            <input type="checkbox">
+            <input type="checkbox" />
         </div>
     </div>
     <footer>
-        <h2>CONDOMINIO:</h2>
-        <h2>NOMBRE_CONDOMINIO</h2>
+        <h2>Condominio:</h2>
+        <h2>Nogales</h2>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
