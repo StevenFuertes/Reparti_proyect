@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.container__selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    background-color: wheat;
+}
+
+.container__encabezado{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer__encabezado{
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+    height: 25px;
+}
+
+.container__reparti__card {
+    position: relative;
+    background-color: #545050;
+    width: 550px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container__reparti__card h2{
+    font-size: 20px;
+}
+
+.etiquetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.container_reparti_ofrecer{
+    position: relative;
+    background-color: #656262;
+    border-radius: 10px;
+    height: 550px;
+    width: 500px;
+    padding: 20px;
+}
+
+.input-group {
+    width: 56%;
+}
+
+.hora{
+    width: 20%;
+}
+
+.btn__reparty{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.btn__reparti__ofrecer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn__reparti__ofrecer button{
+    width: 150px;
+    height: 45px;
+}
+
+.tipos__pagos form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
