@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #426DA0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.condominio {
+    color: #426DA0;
+    background-color: #FFE042;
+    padding: 20px 55px 20px 55px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.usuario {
+    color: #426DA0;
+    background-color: #FFE042;
+    padding: 20px 75px 20px 75px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+}
+a{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.finalizar {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+}
+
+.registrarse {
+    color: white;
+    background-color: #5DAB38;
+    border:none;
+    width: 150px;
+}
+.cancelar {
+    color: white;
+    background-color: #EB5959;
+    border:none;
+    width: 150px;
+}
