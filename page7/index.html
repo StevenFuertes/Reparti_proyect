@@ -21,10 +21,10 @@
         <div class="container__reparti__card">
             <div class="btn-group btn__reparty" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">Buscar</label>
+                <label class="btn btn-outline-success" for="btnradio1">Buscar</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio3">Ofrecer</label>
+                <label class="btn btn-outline-warning" for="btnradio3">Ofrecer</label>
             </div>
             <div class="container_reparti_ofrecer">
                 <div class="etiquetas">
@@ -36,13 +36,16 @@
                 </div>
                 <div class="etiquetas">
                     <h2>Horario Disponible</h2>
-                    <div class="input-group mb-3 hora">
-                        <input type="time" class="form-control" width="40px">
+                    <div class="container__time">
+                        <div class="input-group mb-3 hora">
+                            <input type="time" class="form-control" width="40px">
+                        </div>
+                        <span>-</span>
+                        <div class="input-group mb-3 hora">
+                            <input type="time" class="form-control" width="40px">
+                        </div>
                     </div>
-                    <span>-</span>
-                    <div class="input-group mb-3 hora">
-                        <input type="time" class="form-control" width="40px">
-                    </div>
+
                 </div>
                 <h2>Medios de Pagos</h2>
                 <div class="tipos__pagos">
@@ -58,7 +61,7 @@
                 <div class="etiquetas">
                     <h2>Contacto Whattsap</h2>
                     <div class="input-group mb-3">
-                        <input type="tel" class="form-control" width="40px" placeholder="+51">
+                        <input type="number" class="form-control" width="40px" placeholder="+51">
                     </div>
                 </div>
                 <form class="btn__reparti__ofrecer" action="">
