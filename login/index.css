@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #FFE042; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px;
+    height: 110px;
+}
+nav{
+    width: 1320px;
+    margin-bottom: 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    border: #FFE042 solid;
+    padding: 60px;
+    background-color: #426DA0;
+    border-radius: 20px;    
+}
+.and {
+    font-size: 80px;
+    color: #FFE042;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    color: white !important;
+    margin-top: 15px;
+
+}
+
+.title {
+    background-color: #426DA0;
+    text-align: center;
+    margin-right: 20px;
+    padding: 10px;
+
+}
+
+.login {
+    border-radius: 20px;
+    background-color: #FFE042;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    
+}
+
+input {
+    padding: 15px 20px 15px 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+a {
+    padding: 10px;
+  
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.ingresar {
+    color: white;
+    background-color: #5DAB38;
+    border:none;
+    width: 180px;
+    margin-top: 50px !important;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+.crear {
+    background-color: white;
+    color: #5DAB38;
+    border:none;
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+@media (max-width: 900px) 
+
+{
+    body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        }
+
+    .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+            border: #FFE042 solid;
+            padding: 15px;
+            background-color: #426DA0;
+            border-radius: 20px;    
+        }
+
+        h1 {
+            display: none;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        h4 {
+            color: white !important;
+            margin-top: 15px;
+        
+        }
+
+        .logo {
+            width: 150px;
+            
+        }
+
+        
+        
+        .login {
+            border-radius: 20px;
+            background-color: #FFE042;
+            display: flex;
+            width: 300px;
+            padding-top: 20px ;
+            padding-bottom: 20px ;
+            
+        }
+
+        input {
+            padding: 15px 20px 15px 20px;
+            margin-top: 10px;
+            border-radius: 15px;
+            border: none;
+        }
+        
+        a {
+            padding: 10px;
+          
+        }
+        
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 150px;
+        }
+        
+        /* .ingresar {
+            color: white;
+            background-color: #5DAB38;
+            border:none;
+            width: 180px;
+            margin-top: 50px !important
+        } */
+        .crear {
+            background-color: white;
+            color: #5DAB38;
+            border:none;
+            width: 180px;
+        }
+}
