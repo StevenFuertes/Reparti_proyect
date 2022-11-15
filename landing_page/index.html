@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img src="../images/LogoMakr-8kjolj (fondo negro).png" alt="RepartiDev" width="200" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Como Funciona</a>
-            <a class="nav-link" href="#">Servicios</a>
-            <button type="button" class="btn btn-warning mx-1 my-1">Registrarse</button>
-            <button type="button" class="btn btn-outline-warning mx-1 my-1">Iniciar Sesión</button>
+            <a class="nav-link" href="#como_funciona">Como Funciona</a>
+            <a class="nav-link" href="#contacto">Servicios</a>
+            <button onclick="location.href='../create_profile/index.html' " type="button" class="btn btn-warning mx-1 my-1">Registrarse</button>
+            <button onclick="location.href='../login/index.html' " type="button" class="btn btn-outline-warning mx-1 my-1">Iniciar Sesión</button>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
         <!-- <button type="button" class="btn btn-warning p-3 my-3">Registrarse</button> -->
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <!-- <button type="button" class="btn btn-dark p-2 my-3 fs-5">Inicia tu Pedido</button> -->
-          <button type="button" class="btn btn-warning p-2 my-3 fs-5"><img width="35" class="img-fluid m-1"src="./images/usuario.png" alt="">  Regístrate</button>
+          <button onclick="location.href='../create_profile/index.html'" type="button" class="btn btn-warning p-2 my-3 fs-5"><img width="35" class="img-fluid m-1"src="./images/usuario.png" alt="">  Registrate</button>
           </div>
         </div>
 
@@ -83,6 +83,7 @@
     </div>
       
     <div class="col text-center mt-5">
+      <a name="como_funciona" id="como_funciona"></a> 
       <h2 class="text-warning fw-bold ff-gotham display-4">Cómo funciona<small class="text-dark"> RepartiDev</small></h2>
     </div>
 
@@ -187,12 +188,13 @@
       </div>
       <div class="card text-center shadow">
         <div class="card-header bg-dark">
+          <a name="contacto" id="contacto"></a>
           <small class="text-warning fw-bold ff-gotham display-4"> Contacto</small>
         </div>
         <div class="card-body">
           <h2 class="text-warning fw-bold ff-gotham display-7">RepartiDev<small class="text-muted"> funciona 24x7</small></h2>
           <p class="card-text text-muted fs-5">Pero nuestra canal de atención personalizada por whatsapp es de Lunes a Viernes de 9am a 5pm</p>
-          <a href="#" class="btn btn-warning fs-5 p-3 rounded-5 text-success"><img width="25" class="img-fluid m-1"src="../images/whatsapp (1).png" alt="">   Whatsapp</a>
+          <a href="https://api.whatsapp.com/send?phone=+51985269246&text=Hola, Nececito mas informacion!" class="btn btn-warning fs-5 p-3 rounded-5 text-success"><img width="25" class="img-fluid m-1"src="../images/whatsapp (1).png" alt="">   Whatsapp</a>
         </div>
         
       </div>
