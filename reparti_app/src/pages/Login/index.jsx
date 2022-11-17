@@ -48,14 +48,14 @@ const Login = () => {
     <div className="container mt-5 bg__login">
       <div className="row text-bg-light rounded-2">
         <div className="col p-5">
-          <a href="../landing_page/index.html">
+          <Link to="../LandPage">
             <img
-              src="../images/LogoMakr-8kjolj.png"
+              src="../../assets/LogoMakr-8kjolj.png"
               className="img-fluid"
               width="150"
               alt="..."
             />
-          </a>
+          </Link>
 
           <h1 className="fw-bold text-center my-5 display-4">
             Bienvenido de <span className="text-warning">Vuelta</span>
@@ -91,13 +91,9 @@ const Login = () => {
               />
             </div>
             <div className="mb-5">
-              <a href="">¿Olvidaste tu contraseña?</a>
+              <Link >¿Olvidaste tu contraseña?</Link>
             </div>
-            <button
-              onClick={handleLogin}
-              type="submit"
-              className="btn btn-primary fw-bold p-3 col-12"
-            >
+            <button onClick={handleLogin} className="btn btn-primary fw-bold p-3 col-12">
               Iniciar Sesión
             </button>
                 <Link className="btn btn-warning fw-bold p-3 col-12 mt-3" to="/signup">Crear una Cuenta</Link> 

@@ -1,0 +1,8 @@
+.bg__land {
+    height: 100vh;
+    background-color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (max-width: 900px) {}

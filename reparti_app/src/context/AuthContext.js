@@ -2,7 +2,6 @@ import { createContext, useState } from "react";
 
 import { getUsers } from "../services";
 
-import { UserModel } from "../models/UserModel";
 
 export const AuthContext = createContext();
 
@@ -10,39 +9,18 @@ export const AuthProvider = (props) => {
 
 	const { children } = props;
 
-	const userDB = JSON.parse(localStorage.getItem("user")) || null;
-	let userModel = null;
-	if (userDB) {
-		userModel = new UserModel(
-			userDB.name,
-			userDB.lastName,
-			userDB.email,
-			userDB.pass,
-			userDB.imageProfile,
-			userDB.createdAt,
-			userDB.id
-		);
-	}
-
-	const [user, setUser] = useState(userModel ?? {});
+	const [user, setUser] = useState(
+		JSON.parse(localStorage.getItem("user")) ?? {}
+	  );
 
 	async function login(email, password) {
 		// Traemos toda la data de los usuarios de mockapi:
 		const usersDB = await getUsers();
 		// Buscamos dentro de usersDB, el email y password:
-		let user = null;
-		user = usersDB.find((userDB) => {
-			if (userDB.email === email && userDB.pass === password)
-				return new UserModel(
-					userDB.name,
-					userDB.lastName,
-					userDB.email,
-					userDB.pass,
-					userDB.imageProfile,
-					userDB.createdAt,
-					userDB.id
-				);
-		});
+		const user = usersDB.find(
+			(userDb) => userDb.email === email && userDb.pass === password
+		  );
+
 		if (!user) return false;
 		localStorage.setItem("user", JSON.stringify(user));
 		setUser(user);
@@ -52,7 +30,6 @@ export const AuthProvider = (props) => {
 	function logout() {
 		localStorage.clear();
 		setUser({});
-		window.location.href = "/login";
 	}
 
 	// funcion para validar si la session existe
