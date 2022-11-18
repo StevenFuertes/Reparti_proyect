@@ -9,9 +9,9 @@ const MainLayout = () => {
 
   return (
     <div>
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <Link className="navbar-brand"><img src="../images/LogoMakr-8kjolj (fondo negro).png" alt="RepartiDev" width="200" height="80"/></Link>
+          <Link className="navbar-brand"><img src="../images/LogoMakr-8kjolj (fondo negro).png" alt="RepartiDev" width="200" height="80" /></Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,10 +20,10 @@ const MainLayout = () => {
           </Link>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-             
+
               <li class="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-                RepartiDev
+                  RepartiDev
                 </Link>
                 <ul class="dropdown-menu">
                   <li><a href="./delivery_list.html" class="dropdown-item" >Buscar RepartiDev</a></li>
@@ -34,9 +34,9 @@ const MainLayout = () => {
             </div>
           </div>
         </div>
-    </nav>
-<Outlet />
-</div>
+      </nav>
+      <Outlet />
+    </div>
   );
 };
 

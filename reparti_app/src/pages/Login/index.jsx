@@ -45,7 +45,7 @@ const Login = () => {
   }
 
   return (
-    <div className="container mt-5 bg__login">
+    <div className="container mt-1 bg__login">
       <div className="row text-bg-light rounded-2">
         <div className="col p-5">
           <Link to="../LandPage">

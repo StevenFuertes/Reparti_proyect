@@ -4,15 +4,10 @@ background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25,
 background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
 }
 
 .img-1{
-    background-image: url("../../assets/pexels-cottonbro-studio-4604627\ \(1\).jpg");
+    background-image: url("../../assets/fondo_login.jpg");
     background-size: cover;
     background-position: center end;
 }
