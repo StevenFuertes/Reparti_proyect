@@ -2,7 +2,7 @@ import { Navigate, Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import React from "react";
 import "./index.css";
- 
+import index from "../../assets/index"
 
 const LandPage = () => {
 
@@ -11,7 +11,7 @@ const LandPage = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand" >
-                        <img src="../../assets/LogoMakr-8kjolj(fondo negro).png" alt="RepartiDev" width="200" height="80" />
+                        <img src={index.logoNegro} alt="RepartiDev" width="200" height="80" />
                     </Link>
                     <Link className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -33,12 +33,12 @@ const LandPage = () => {
 
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <h1 className=" text-warning fw-bold ff-gotham display-4">Pide o Reparte <small className="text-dark"> en tu Condominio desde</small></h1>
-                            <img className="img-fluid mb-5" src="../../assets/LogoMakr-8kjolj.png" alt="RepartiDev" />
+                            <img className="img-fluid mb-5" src={index.logoBlanco} alt="RepartiDev" />
                             <h5 className="text-success text-center fs-4">Tus pedidos desde la comodidad de tu depa</h5>
                             <h5 className="text-info text-center fs-4">Tus repartos sin salir de tu condominio</h5>
                             <h5 className="text-dark text-center fs-4">RepartiDev te ayuda !!!</h5>
                             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="../SignUp" type="button" className="btn btn-warning p-2 my-3 fs-5"><img width="35" className="img-fluid m-1" src="../../assets/usuario.png" alt="" />  Registrate</Link>
+                                <Link to="../SignUp" type="button" className="btn btn-warning p-2 my-3 fs-5"><img width="35" className="img-fluid m-1" src={index.usuario} alt="" />  Registrate</Link>
                             </div>
                         </div>
 
@@ -186,8 +186,8 @@ const LandPage = () => {
                         </div>
                         <div className="card-body">
                             <h2 className="text-warning fw-bold ff-gotham display-7">RepartiDev<small className="text-muted"> funciona 24x7</small></h2>
-                            <p className="card-text text-muted fs-5">Pero nuestra canal de atención personalizada por whatsapp es de Lunes a Viernes de 9am a 5pm</p>
-                            <a href="https://api.whatsapp.com/send?phone=+51985269246&text=Hola, Nececito mas informacion!" className="btn btn-warning fs-5 p-3 rounded-5 text-success"><img width="25" className="img-fluid m-1" src="../../assets/whatsapp (1).png" alt="" />   Whatsapp</a>
+                            <p className="card-text text-muted fs-5">Pero nuestro canal de atención personalizada por whatsapp es de Lunes a Viernes de 9am a 5pm</p>
+                            <a href="https://api.whatsapp.com/send?phone=+51985269246&text=Hola, Nececito mas informacion!" className="btn btn-warning fs-5 p-3 rounded-5 text-success"><img width="25" className="img-fluid m-1" src={index.whatsapp1} alt="" />   Whatsapp</a>
                         </div>
 
                     </div>
@@ -197,7 +197,7 @@ const LandPage = () => {
                 <div className="container text-white bg-dark rounded-3">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3">
-                            <img className="img-fluid" src="../../assets/LogoMakr-8kjolj (fondo negro).png" alt="" />
+                            <img className="img-fluid" src={index.logoNegro} alt="" />
                             <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, aspernatur quas modi veniam animi architecto sed voluptas soluta, repellat odio eveniet minus at. Nemo omnis fugit nihil veniam explicabo tempore!</p>
                             <h4 className="p-3">RUC: 10467062320</h4>
                         </div>
@@ -205,19 +205,19 @@ const LandPage = () => {
                             <h2 className="text-warning ff-gotham">Síguenos</h2>
                             <ul className="list-group">
                                 <li className="list-group-item d-flex justify-content-center align-items-center">
-                                    <img width="25" className="img-fluid m-2" src="../../assets/instagram.png" alt="" />
+                                    <img width="25" className="img-fluid m-2" src={index.instagram} alt="" />
                                     RepartiDev
                                 </li>
                                 <li className="list-group-item d-flex justify-content-center align-items-center">
-                                    <img width="25" className="img-fluid m-2" src="../../assets/facebook.png" alt="" />
+                                    <img width="25" className="img-fluid m-2" src={index.facebook} alt="" />
                                     RepartiDev.Oficial
                                 </li>
                                 <li className="list-group-item d-flex justify-content-center align-items-center">
-                                    <img width="25" className="img-fluid m-2" src="../../assets/youtube.png" alt="" />
+                                    <img width="25" className="img-fluid m-2" src={index.youtube} alt="" />
                                     RepartiDevOficial
                                 </li>
                                 <li className="list-group-item d-flex justify-content-center align-items-center">
-                                    <img width="25" className="img-fluid m-2" src="../../assets/tik-tok.png" alt="" />
+                                    <img width="25" className="img-fluid m-2" src={index.tik_tok} alt="" />
                                     RepartiDevOficial
                                 </li>
                             </ul>

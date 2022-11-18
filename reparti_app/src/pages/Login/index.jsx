@@ -3,6 +3,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { Navigate, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./index.css";
+import index from "../../assets/index"
 
 const Login = () => {
   const { login, isAuth } = useContext(AuthContext);
@@ -50,7 +51,7 @@ const Login = () => {
         <div className="col p-5">
           <Link to="../LandPage">
             <img
-              src="../../assets/LogoMakr-8kjolj.png"
+              src={index.logoBlanco}
               className="img-fluid"
               width="150"
               alt="..."
