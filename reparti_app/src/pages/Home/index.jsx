@@ -6,7 +6,7 @@ import { TaskModel } from "../../models/TaskModel";
 import { AuthContext } from "../../context/AuthContext";
 
 function Home() {
-    const { user } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
     const [taskList, setTaskList] = useState([]);
 
     async function getTasks() {
@@ -70,7 +70,7 @@ function Home() {
                     </div>
 
                     <div className="d-grid gap-2">
-                        <button className="btn btn-danger mt-5 fw-bold" type="button">
+                        <button className="btn btn-danger mt-5 fw-bold" type="button" onClick={logout}>
                             Cerrar Sesión
                         </button>
                     </div>

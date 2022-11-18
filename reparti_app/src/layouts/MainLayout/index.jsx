@@ -3,7 +3,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { Navigate, Outlet, Link } from "react-router-dom";
 
 const MainLayout = () => {
-  const { isAuth, user } = useContext(AuthContext);
+  const { isAuth, user, logout } = useContext(AuthContext);
 
   if (!isAuth()) return <Navigate to="/login" />;
 
@@ -15,9 +15,6 @@ const MainLayout = () => {
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <Link className="navbar-brand" href="/">
-            {user.getFullDetails()}
-          </Link>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
 
@@ -28,6 +25,9 @@ const MainLayout = () => {
                 <ul class="dropdown-menu">
                   <li><a href="./delivery_list.html" class="dropdown-item" >Buscar RepartiDev</a></li>
                   <li><a href="./order_list.html" class="dropdown-item" >Publicar RepartiDev</a></li>
+                  <li className="nav-item">
+                    <a href="" className="nav-link active text-danger" onClick={logout} > Logout </a>
+                  </li>
                 </ul>
               </li>
               <button type="button" class="btn btn-warning mx-1 my-1">Home</button>
