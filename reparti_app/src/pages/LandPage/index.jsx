@@ -56,13 +56,13 @@ const LandPage = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://lh3.googleusercontent.com/p/AF1QipNFhLf2YtbQQYbI5imMyBBSXTlsYuMlsKQqtYOa=w1080-h608-p-no-v0" className="d-block w-100" alt="..." />
+                            <img src={index.condominio_car1} className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://peru21.pe/resizer/FN4LJFbiPlqrcOkIBPMIQWLNWms=/1200x675/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/WAPUSGK3KZDSBKSFK7CIEGOELI.jpg" className="d-block w-100" alt="..." />
+                            <img src={index.condominio_car2} className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://media.istockphoto.com/photos/lima-peru-modern-buildings-on-street-in-miraflores-district-picture-id1090476916" className="d-block w-100" alt="..." />
+                            <img src={index.condominio_car3} className="d-block w-100" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

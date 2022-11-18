@@ -20,7 +20,7 @@ function SignUp() {
     history("/login");
   };
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="row text-bg-light rounded-2">
         <div className="col p-4 ">
           <h1 className="fw-bold text-center my-5 display-4">
