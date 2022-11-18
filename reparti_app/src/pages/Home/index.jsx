@@ -59,7 +59,7 @@ function Home() {
                     </div>
 
                     <div className="list-group">
-                        <Link 
+                        <Link
                             to="/profile_int"
                             className="list-group-item list-group-item-action active fw-bold text-center rounded-2 border border-none bg-success shadow"
                             aria-current="true">
@@ -75,15 +75,15 @@ function Home() {
                         </button>
                     </div>
                     <div className="mt-5">
-				{taskList.map((task, index) => (
-					<TaskCard
-						key={index}
-						task={task}
-						getTasks={getTasks}
-						updateTask={updateTask}
-					/>
-				))}
-			</div>
+                        {taskList.map((task, index) => (
+                            <TaskCard
+                                key={index}
+                                task={task}
+                                getTasks={getTasks}
+                                updateTask={updateTask}
+                            />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 rounded-3 bg-dark">

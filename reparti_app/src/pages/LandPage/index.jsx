@@ -2,6 +2,7 @@ import { Navigate, Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import React from "react";
 import "./index.css";
+ 
 
 const LandPage = () => {
 
