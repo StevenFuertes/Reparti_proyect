@@ -5,8 +5,6 @@ import "./index.css";
 
 const LandPage = () => {
 
-    const cargarImagen = require.context("../../assets", true);
-
     return (
         <div className= "bg__land">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

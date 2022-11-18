@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/LogoMakr-8kjolj (fondo negro).png" alt="RepartiDev" width="200" height="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+              <!-- <a class="nav-link" href="#">Como Funciona</a>
+              <a class="nav-link" href="#">Servicios</a>
+              <button type="button" class="btn btn-warning mx-1 my-1">Registrarse</button> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  RepartiDev
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="./delivery_list.html" class="dropdown-item" href="#">Buscar RepartiDev</a></li>
+                  <li><a href="./order_list.html" class="dropdown-item" href="#">Publicar RepartiDev</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <button type="button" class="btn btn-warning mx-1 my-1">Home</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 border-none rounded-start py-5 bg-light text-dark">
+                <div class="d-grid justify-content-center py-5">
+                    <img width="80" class="img-fluid rounded mx-auto d-block" src="../images/usuario.png" alt="">
+                    <h2 class=" text-warning fw-bold ff-gotham display-7">Ricardo<small class="text-dark"> Huaytan</small></h2>
+                </div>
+
+
+                <div class="list-group">
+                  <a href="./profile_int.html" class="list-group-item list-group-item-action active fw-bold text-center rounded-2 border border-none bg-success shadow" aria-current="true">
+                    Perfil
+                  </a>
+                  <!-- <a href="./order_list.html" class="list-group-item list-group-item-action fw-bold mt-3 rounded-2 shadow">Mis Solicitudes</a>
+                  <a href="./delivery_list.html" class="list-group-item list-group-item-action fw-bold mt-3 rounded-2 shadow">Repartidores</a> -->
+                  <a href="#" class="list-group-item list-group-item-action fw-bold mt-3 mb-5 rounded-2 shadow">Contáctanos</a>
+
+                  <!-- <a class="list-group-item list-group-item-action disabled">A disabled link item</a> -->
+                </div>
+
+
+                  <div class="d-grid gap-2">
+                    <!-- <button class="btn btn-warning" type="button">Registrar</button> -->
+                    <button class="btn btn-danger mt-5 fw-bold" type="button">Cerrar Sesión</button>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
+                <h1 class="fw-bold text-center mb-5 display-4">Publicar<span class="text-warning"> RepartiDev</span></h1>
+                <form class="px-4">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputNombres" class="form-label fw-bold">Nombres</label>
+                          <input type="text" class="form-control p-3" placeholder="Nombres" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputApellidos" class="form-label fw-bold">Apellidos</label>
+                          <input type="text" class="form-control p-3" placeholder="Apellidos" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label fw-bold"><i class="fa-solid fa-envelope"></i> Email</label>
+                             <input type="email" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputTel" class="form-label fw-bold">Celular</label>
+                            <input type="tel" class="form-control p-3" id="exampleInputTel" aria-describedby="telHelp" placeholder="Celular">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+
+                        <div class="col">
+                            <label for="Select" class="form-label fw-bold">Costo del RepartiDev</label>
+                            <select id="Select" class="form-select p-3">
+                                <option class="d-none">Elije una Opción</option>
+                                <option>S/1.00</option>
+                                <option>S/1.50</option>
+                                <option>S/2.00</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="Select" class="form-label fw-bold">Horario de Atención</label>
+                            <select id="Select" class="form-select p-3">
+                                <option class="d-none">Elije una Opción</option>
+                                <option>08:00 - 14:00 hs.</option>
+                                <option>14:00 - 19:00 hs.</option>
+                                <option>19:00 - 22:00 hs.</option>
+                            </select>
+                        </div>
+                           
+                    </div>
+
+
+                    <div class="row mb-3"> 
+                        <h6 class="form-label fw-bold">Métodos de Pago</h6>
+                        <div class="col-4">
+                            <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">BCP</label>
+                            </div>
+                        </div> 
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Interbank</label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">BBVA</label>
+                            </div>
+                        </div> 
+
+                        <div class="col-4">
+                            <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Yape</label>
+                            </div>
+                        </div> 
+
+                        <div class="col-4">
+                            <div class="form-check">                              
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Plin</label>
+                            </div>
+                        </div> 
+
+                        <div class="col-4">
+                            <div class="form-check">                             
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Efectivo</label>
+                            </div>
+                        </div>    
+                    </div>
+
+                    
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-warning fw-bold mt-5" type="button">Publicar</button>
+                        <button class="btn btn-danger fw-bold" type="button">Cancelar</button>
+                      </div>
+                    
+                    
+                </form>
+
+                  
+            </div>
+        </div>
+    </div>
+
+
+      
+
+</body>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
