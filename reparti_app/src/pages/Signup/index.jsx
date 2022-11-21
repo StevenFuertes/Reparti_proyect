@@ -39,6 +39,7 @@ function SignUp() {
                   aria-label="First name"
                   id="firstName"
                   name="firstName"
+                  required
                 />
               </div>
               <div className="col">
@@ -55,6 +56,7 @@ function SignUp() {
                   aria-label="Last name"
                   id="lastName"
                   name="lastName"
+                  required
                 />
               </div>
             </div>
@@ -71,6 +73,7 @@ function SignUp() {
                   placeholder="Email"
                   id="email"
                   name="email"
+                  required
                 />
               </div>
               <div className="col">
@@ -85,6 +88,7 @@ function SignUp() {
                   placeholder="Contraseña"
                   id="password"
                   name="password"
+                  required
                 />
               </div>
             </div>
@@ -111,6 +115,7 @@ function SignUp() {
                   placeholder="DNI"
                   id="dni"
                   name="dni"
+                  required
                 />
               </div>
             </div>
@@ -127,6 +132,7 @@ function SignUp() {
                   placeholder="Celular"
                   id="celular"
                   name="celular"
+                  required
                 />
               </div>
               <div className="col-sm-6 col-lg-3">
@@ -139,6 +145,7 @@ function SignUp() {
                   placeholder="Torre"
                   id="torre"
                   name="torre"
+                  required
                 />
               </div>
               <div className="col-sm-6 col-lg-3">
@@ -153,6 +160,7 @@ function SignUp() {
                   placeholder="Dpto"
                   id="dpto"
                   name="dpto"
+                  required
                 />
               </div>
             </div>

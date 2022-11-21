@@ -1,12 +1,5 @@
-.bg__login {
 
-background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-}
-
-.img-1{
+  .img-1{
     background-image: url("../../assets/image/fondo_login.jpg");
     background-size: cover;
     background-position: center end;
