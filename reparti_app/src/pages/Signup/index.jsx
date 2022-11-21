@@ -110,7 +110,7 @@ function SignUp() {
                   DNI
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   className="form-control p-3"
                   placeholder="DNI"
                   id="dni"
@@ -126,7 +126,7 @@ function SignUp() {
                   Celular
                 </label>
                 <input
-                  type="tel"
+                  type="number"
                   className="form-control p-3"
                   aria-describedby="telHelp"
                   placeholder="Celular"
@@ -140,7 +140,7 @@ function SignUp() {
                   N° de Torre
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   className="form-control p-3"
                   placeholder="Torre"
                   id="torre"
