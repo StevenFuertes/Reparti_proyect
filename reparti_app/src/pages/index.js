@@ -7,3 +7,7 @@ export { default as SignUpView } from "./SignUp";
 export { default as LandPageView } from "./LandPage";
 
 export { default as ProfileView } from "./Profile";
+
+export { default as SearchView } from "./Search";
+
+export { default as PostRepartiView } from "./PostReparti";

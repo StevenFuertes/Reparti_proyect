@@ -50,16 +50,16 @@ function Home() {
     <div className="container my-5">
       <div className="row">
         <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 py-5 border-none rounded-start bg-light text-dark">
-          <div class="d-grid justify-content-center py-5">
+          <div className="d-grid justify-content-center py-5">
             <img
               width="80"
-              class="img-fluid rounded mx-auto d-block"
+              className="img-fluid rounded mx-auto d-block"
               src={index.usuario}
               alt=""
             />
-            <h2 class=" text-warning fw-bold ff-gotham display-7">
+            <h2 className=" text-warning fw-bold ff-gotham display-7">
               {user.name}
-              <small class="text-dark"> {user.lastName}</small>
+              <small className="text-dark"> {user.lastName}</small>
             </h2>
           </div>
 
@@ -87,7 +87,7 @@ function Home() {
           </div>
         </div>
         <div className="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 rounded-3 bg-dark">
-          <img src={index.repartidor_dor} width="400" alt="" />
+          <img className="img-fluid rounded mx-auto d-block" src={index.repartidor_dor} width="800" alt="" />
         </div>
       </div>
     </div>

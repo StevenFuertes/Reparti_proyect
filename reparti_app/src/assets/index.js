@@ -9,6 +9,7 @@ import tik_tok from  "./image/tik_tok.png"
 import condominio_car1 from "./image/condominio_car1.jpg"
 import condominio_car2 from "./image/condominio_car2.jpg"
 import condominio_car3 from "./image/condominio_car3.jpg"
+import repartidor_dor from  "./image/repartidor_dor.jpg"
 
 export default {
     "logoNegro": logoNegro,
@@ -22,5 +23,6 @@ export default {
     "condominio_car1" : condominio_car1,
     "condominio_car2" : condominio_car2,
     "condominio_car3" : condominio_car3,
+    "repartidor_dor" : repartidor_dor,
 }
 
