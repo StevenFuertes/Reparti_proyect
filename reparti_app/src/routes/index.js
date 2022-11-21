@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Vistas
-import { HomeView, LoginView, SignUpView, LandPageView } from "../pages";
+import { HomeView, LoginView, SignUpView, LandPageView, ProfileView } from "../pages";
 
 import { MainLayout } from "../layouts";
 
@@ -10,6 +10,7 @@ const Router = () => {
       <Routes>
         <Route path="/landpage" element={<LandPageView />} />
         <Route element={<MainLayout />}>
+        <Route path="/perfil" element={<ProfileView />} />
           <Route path="/" element={<HomeView />} />
         </Route>
         <Route path="/login" element={<LoginView />} />
@@ -22,5 +23,5 @@ const Router = () => {
 export default Router;
 
 // {/* <Route path="/todoapp" element={<TodoAppView />} />
-// <Route path="/perfil" element={<ProfileView />} />
+
 // <Route path="/task/:id" element={<TaskView />} /> */}

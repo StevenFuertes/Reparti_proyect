@@ -21,6 +21,7 @@ const Login = () => {
   };
 
   const handleLogin = () => {
+    // null - undefinded - ""
     if (!user.email || !user.password) {
       Swal.fire({
         title: "Error",
@@ -29,7 +30,7 @@ const Login = () => {
       });
       return;
     }
-    //* Si ambos campos estan llenos se guarda en localStorage
+    //* Save en localStorage
     const inicio = login(user.email, user.password);
 
     if (!inicio) {
@@ -46,6 +47,7 @@ const Login = () => {
   }
 
   return (
+
     <div className="container mt-1 bg__login">
       <div className="row text-bg-light rounded-2">
         <div className="col p-5">
@@ -57,53 +59,52 @@ const Login = () => {
               alt="..."
             />
           </Link>
-
           <h1 className="fw-bold text-center my-5 display-4">
             Bienvenido de <span className="text-warning">Vuelta</span>
           </h1>
-          <form className="px-4">
-            <div className="mb-4">
-              <label for="exampleInputEmail1" className="form-label fw-bold ">
-                <i className="fa-solid fa-envelope"></i> Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                className="form-control p-3"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Ingresa tu Email"
-                value={user.email}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="mb-2">
-              <label for="exampleInputPassword1" className="form-label fw-bold">
-                Contraseña
-              </label>
-              <input
-                type="password"
-                name="password"
-                className="form-control p-3"
-                id="exampleInputPassword1"
-                placeholder="Ingresa tu Contraseña"
-                value={user.password}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="mb-5">
-              <Link >¿Olvidaste tu contraseña?</Link>
-            </div>
-            <button onClick={handleLogin} className="btn btn-primary fw-bold p-3 col-12">
-              Iniciar Sesión
-            </button>
-                <Link className="btn btn-warning fw-bold p-3 col-12 mt-3" to="/signup">Crear una Cuenta</Link> 
-
-          </form>
+          <div className="mb-4">
+            <label for="exampleInputEmail1" className="form-label fw-bold ">
+              <i className="fa-solid fa-envelope"></i> Email
+            </label>
+            <input
+              className="form-control p-3"
+              type="email"
+              placeholder="Ingresa tu Email"
+              name="email"
+              value={user.email}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="mb-2">
+            <label for="exampleInputPassword1" className="form-label fw-bold">
+              Contraseña
+            </label>
+            <input
+              className="form-control p-3"
+              type="password"
+              placeholder="Ingresa tu Contraseña"
+              name="password"
+              value={user.password}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="mb-5">
+            <Link >¿Olvidaste tu contraseña?</Link>
+          </div>
+          <button className="btn btn-primary fw-bold p-3 col-12" onClick={handleLogin}>
+            Ingresar
+          </button>
+          <Link
+            className="btn btn-warning fw-bold p-3 col-12 mt-3"
+            to="/signup"
+          >
+            Registro
+          </Link>
         </div>
         <div className="col img-1 d-none d-lg-block rounded-end"></div>
       </div>
     </div>
+
   );
 };
 
