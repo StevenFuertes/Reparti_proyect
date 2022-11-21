@@ -19,8 +19,8 @@ const LandPage = () => {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
                             <Link className="nav-link active" aria-current="page" href="#">Home</Link>
-                            <Link className="nav-link" href="#como_funciona">Como Funciona</Link>
-                            <Link className="nav-link" href="#contacto">Servicios</Link>
+                            <a className="nav-link" href="#como_funciona">Como Funciona</a>
+                            <a className="nav-link" href="#contacto">Servicios</a>
                             <Link to="../Signup" type="button" className="btn btn-warning mx-1 my-1">Registrarse</Link>
                             <Link to="../login" type="button" className="btn btn-outline-warning mx-1 my-1">Iniciar Sesión</Link>
                         </div>
