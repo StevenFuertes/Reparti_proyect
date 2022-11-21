@@ -47,19 +47,19 @@ function Profile() {
   }, []);
 
   return (
-    <div class="container my-5">
-      <div class="row">
+    <div className="container my-5">
+      <div className="row">
         <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 py-5 border-none rounded-start bg-light text-dark">
-          <div class="d-grid justify-content-center py-5">
+          <div className="d-grid justify-content-center py-5">
             <img
               width="80"
-              class="img-fluid rounded mx-auto d-block"
+              className="img-fluid rounded mx-auto d-block"
               src={index.usuario}
               alt=""
             />
-            <h2 class=" text-warning fw-bold ff-gotham display-7">
+            <h2 className=" text-warning fw-bold ff-gotham display-7">
               {user.name}
-              <small class="text-dark"> {user.lastName}</small>
+              <small className="text-dark"> {user.lastName}</small>
             </h2>
           </div>
 
@@ -86,45 +86,45 @@ function Profile() {
             </button>
           </div>
         </div>
-        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
-          <h1 class="fw-bold text-center mb-5 display-4">
-            Mi<span class="text-warning"> Perfil</span>
+        <div className="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
+          <h1 className="fw-bold text-center mb-5 display-4">
+            Mi<span className="text-warning"> Perfil</span>
           </h1>
-          <form class="px-4">
-            <div class="row mb-3">
-              <div class="col">
-                <label for="exampleInputNombres" class="form-label fw-bold">
+          <form className="px-4">
+            <div className="row mb-3">
+              <div className="col">
+                <label for="exampleInputNombres" className="form-label fw-bold">
                   Nombres
                 </label>
                 <input
                   type="text"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   placeholder="Nombres"
                   aria-label="First name"
                   value={user.name}
                 />
               </div>
-              <div class="col">
-                <label for="exampleInputApellidos" class="form-label fw-bold">
+              <div className="col">
+                <label for="exampleInputApellidos" className="form-label fw-bold">
                   Apellidos
                 </label>
                 <input
                   type="text"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   placeholder="Apellidos"
                   aria-label="Last name"
                   value={user.lastName}
                 />
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col">
-                <label for="exampleInputEmail1" class="form-label fw-bold">
-                  <i class="fa-solid fa-envelope"></i> Email
+            <div className="row mb-3">
+              <div className="col">
+                <label for="exampleInputEmail1" className="form-label fw-bold">
+                  <i className="fa-solid fa-envelope"></i> Email
                 </label>
                 <input
                   type="email"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Email"
@@ -132,25 +132,25 @@ function Profile() {
                 />
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col">
-                <label for="Select" class="form-label fw-bold">
+            <div className="row mb-3">
+              <div className="col">
+                <label for="Select" className="form-label fw-bold">
                   Nombre del Condominio
                 </label>
-                <select id="Select" class="form-select p-3">
-                  <option class="d-none">Elije una Opción</option>
+                <select id="Select" className="form-select p-3">
+                  <option className="d-none">Elije una Opción</option>
                   <option>Las Alondras</option>
                   <option>Las Golondrinas</option>
                   <option>Las Garzas</option>
                 </select>
               </div>
-              <div class="col">
-                <label for="exampleInputDni1" class="form-label fw-bold">
+              <div className="col">
+                <label for="exampleInputDni1" className="form-label fw-bold">
                   DNI
                 </label>
                 <input
                   type="text"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   id="exampleInputDni1"
                   placeholder="DNI"
                   value={user.dni}
@@ -158,39 +158,39 @@ function Profile() {
               </div>
             </div>
 
-            <div class="row mb-3">
-              <div class="col-sm-12 col-lg-6">
-                <label for="exampleInputTel" class="form-label fw-bold">
+            <div className="row mb-3">
+              <div className="col-sm-12 col-lg-6">
+                <label for="exampleInputTel" className="form-label fw-bold">
                   Celular
                 </label>
                 <input
                   type="tel"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   id="exampleInputTel"
                   aria-describedby="telHelp"
                   placeholder="Celular"
                   value={user.phone}
                 />
               </div>
-              <div class="col-sm-6 col-lg-3">
-                <label for="exampleInputPassword1" class="form-label fw-bold ">
+              <div className="col-sm-6 col-lg-3">
+                <label for="exampleInputPassword1" className="form-label fw-bold ">
                   N° de Torre
                 </label>
                 <input
                   type="number"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   id="exampleInputPassword1"
                   placeholder="Torre"
                   value={user.tower}
                 />
               </div>
-              <div class="col-sm-6 col-lg-3">
-                <label for="exampleInputPassword1" class="form-label fw-bold ">
+              <div className="col-sm-6 col-lg-3">
+                <label for="exampleInputPassword1" className="form-label fw-bold ">
                   N° Dpto
                 </label>
                 <input
                   type="number"
-                  class="form-control p-3"
+                  className="form-control p-3"
                   id="exampleInputPassword1"
                   placeholder="Dpto"
                   value={user.dpto}

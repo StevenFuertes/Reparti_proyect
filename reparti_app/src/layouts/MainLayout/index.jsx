@@ -24,8 +24,8 @@ const MainLayout = () => {
                   RepartiDev
                 </Link>
                 <ul class="dropdown-menu">
-                  <li><a href="./delivery_list.html" class="dropdown-item" >Buscar RepartiDev</a></li>
-                  <li><a href="./order_list.html" class="dropdown-item" >Publicar RepartiDev</a></li>
+                  <li><Link to="/Search" class="dropdown-item" >Buscar RepartiDev</Link></li>
+                  <li><Link to="/Post" class="dropdown-item" >Publicar RepartiDev</Link></li>
                   <li className="nav-item">
                     <a href="" className="nav-link active text-danger" onClick={logout} > Logout </a>
                   </li>

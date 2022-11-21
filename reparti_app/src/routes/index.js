@@ -1,6 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Vistas
-import { HomeView, LoginView, SignUpView, LandPageView, ProfileView } from "../pages";
+import {
+  HomeView,
+  LoginView,
+  SignUpView,
+  LandPageView,
+  ProfileView,
+  SearchView,
+  PostRepartiView,
+} from "../pages";
 
 import { MainLayout } from "../layouts";
 
@@ -10,7 +18,9 @@ const Router = () => {
       <Routes>
         <Route path="/landpage" element={<LandPageView />} />
         <Route element={<MainLayout />}>
-        <Route path="/perfil" element={<ProfileView />} />
+          <Route path="/Post" element={<PostRepartiView />} />
+          <Route path="/Search" element={<SearchView />} />
+          <Route path="/perfil" element={<ProfileView />} />
           <Route path="/" element={<HomeView />} />
         </Route>
         <Route path="/login" element={<LoginView />} />
