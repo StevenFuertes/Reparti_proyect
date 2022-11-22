@@ -91,7 +91,7 @@ function Search() {
                     <h2 class=" text-warning text-center fw-bold ff-gotham display-4 mb-5">
                         Lista de <small class="text-muted"> Repartidores</small>
                     </h2>
-                    <table class="table text-light">
+                  <table class="table text-light">
                         <thead>
                             <tr>
                                 <th scope="col">Torre</th>
@@ -112,6 +112,7 @@ function Search() {
                             ))}
                         </tbody>
                     </table>
+
 
                 </div>
             </div>

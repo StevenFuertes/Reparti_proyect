@@ -46,6 +46,7 @@ function PostReparti() {
         // que provoca el []: Que se ejecute solo una vez
     }, []);
 
+
     return (
         <div className="container my-5">
             <div className="row">
@@ -87,25 +88,28 @@ function PostReparti() {
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 rounded-3 bg-dark">
-                    <h2 class=" text-warning text-center fw-bold ff-gotham display-4 mb-5">
-                        Publicar <small class="text-muted"> RepartiDev</small>
-                    </h2>
-                    <table class="table text-light">
-                        <thead>
-                            <tr>
-                                <th scope="col">Servicio que Ofrece</th>
-                                {/* <th scope="col">Repartidor</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Servicio</th>
-                                <th scope="col">Whatsapp</th> */}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <TaskForm onSubmitFunction={addTask} />
-                        </tbody>
-                    </table>
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
+                    <h1 class="fw-bold text-center mb-5 display-4">Publicar<span class="text-warning"> RepartiDev</span></h1>
+                    <form class="px-4">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="exampleInputNombres" class="form-label fw-bold">Nombres</label>
+                                <input disabled value={user.name} type="text" class="form-control p-3" placeholder="Nombres" aria-label="First name"/>
+                            </div>
+                            <div class="col">
+                                <label for="exampleInputApellidos" class="form-label fw-bold">Apellidos</label>
+                                <input disabled value={user.lastName} type="text" class="form-control p-3" placeholder="Apellidos" aria-label="Last name"/>
+                            </div>
+                        </div>
+
+                        <TaskForm onSubmitFunction={addTask} />
+
+
+                    </form>
+
+
                 </div>
+
             </div>
         </div>
     );
