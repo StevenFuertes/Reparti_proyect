@@ -14,7 +14,14 @@ function SignUp() {
       data.get("firstName"),
       data.get("lastName"),
       data.get("email"),
-      data.get("password")
+      data.get("password"),
+      data.get("imageProfile"),
+      data.get("createdAt"),
+      data.get("id"),
+      data.get("dni"),
+      data.get("phone"),
+      data.get("tower"),
+      data.get("dpto"),
     );
     await postUser(newUser);
     history("/login");
@@ -110,7 +117,7 @@ function SignUp() {
                   DNI
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control p-3"
                   placeholder="DNI"
                   id="dni"
@@ -126,12 +133,12 @@ function SignUp() {
                   Celular
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control p-3"
                   aria-describedby="telHelp"
                   placeholder="Celular"
-                  id="celular"
-                  name="celular"
+                  id="phone"
+                  name="phone"
                   required
                 />
               </div>
@@ -140,11 +147,11 @@ function SignUp() {
                   N° de Torre
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control p-3"
                   placeholder="Torre"
-                  id="torre"
-                  name="torre"
+                  id="tower"
+                  name="tower"
                   required
                 />
               </div>
@@ -155,7 +162,7 @@ function SignUp() {
                   N° Dpto
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control p-3"
                   placeholder="Dpto"
                   id="dpto"
