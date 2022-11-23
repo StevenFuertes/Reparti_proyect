@@ -38,7 +38,7 @@ const LandPage = () => {
                             <h5 className="text-info text-center fs-4">Tus repartos sin salir de tu condominio</h5>
                             <h5 className="text-dark text-center fs-4">RepartiDev te ayuda !!!</h5>
                             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="../SignUp" type="button" className="btn btn-warning p-2 my-3 fs-5"><img width="35" className="img-fluid m-1" src={index.usuario} alt="" />  Registrate</Link>
+                                <Link to="../SignUp" type="button" className="btn btn-warning p-2 my-3 fs-5"><img width="30" className="img-fluid m-1" src={index.usuario} alt="" />  Registrate</Link>
                             </div>
                         </div>
 
@@ -87,40 +87,40 @@ const LandPage = () => {
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <h4 className="text-success p-2">¿Deseas realizar un pedido dev?</h4>
-                            <div className="accordion" id="accordionExample">
+                            <div className="accordion" id="accordionExample"> 
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingOne">
                                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Paso #1
+                                        👉🏼 Paso N°1
                                         </button>
                                     </h2>
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Buscar un RepartiDev disponible.</strong> En la Lista de RepartiDev podras encontrar a los RepartDev disponibles según el horario que desees.
                                         </div>
                                     </div>
                                 </div>
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingTwo">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Paso #2
+                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        👉🏼 Paso N° 2
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo" className="accordion-collapse collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Dar click en el ícono de Whatsapp</strong>seras redirigido a una comunicación con el RepartiDev elegido, a fin poder tener una atención personalizada.                                         
                                         </div>
                                     </div>
                                 </div>
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingThree">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Paso #3
+                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        👉🏼 Paso N° 3
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree" className="accordion-collapse collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Disfrutar del pedido o servicio solicitado al RepartiDev</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -140,36 +140,36 @@ const LandPage = () => {
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingFour">
                                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                            Paso #1
+                                        👉🏼 Paso N° 1
                                         </button>
                                     </h2>
                                     <div id="collapseFour" className="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Ser un RepartiDev</strong>, dar click en Publicar RepartiDev en la barra de menú.
                                         </div>
                                     </div>
                                 </div>
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingFive">
                                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Paso #2
+                                        👉🏼 Paso N° 2
                                         </button>
                                     </h2>
                                     <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Ingresar tu informacion</strong>, llena el formulario y estaras listo para que te contacten y soliciten tus servicios.
                                         </div>
                                     </div>
                                 </div>
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingSix">
                                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            Paso #3
+                                        👉🏼 Paso #3
                                         </button>
                                     </h2>
                                     <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <strong>✅ Gana dinero siendo un RepartiDev</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -194,14 +194,14 @@ const LandPage = () => {
                 </div>
 
 
-                <div className="container text-white bg-dark rounded-3">
+                <div className=" text-white bg-dark rounded-3">
                     <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3">
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
                             <img className="img-fluid" src={index.logoNegro} alt="" />
-                            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, aspernatur quas modi veniam animi architecto sed voluptas soluta, repellat odio eveniet minus at. Nemo omnis fugit nihil veniam explicabo tempore!</p>
+                            <p className="m-3 fs-5">📣 Pensado para poder unir pedidos y RepartiDev desde la comodidad de tu Condominio. <strong className="text-warning">📲 ¡Pides o repartes sin salir de tu condominio¡ 📦</strong></p> 
                             <h4 className="p-3">RUC: 10467062320</h4>
                         </div>
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3">
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
                             <h2 className="text-warning ff-gotham">Síguenos</h2>
                             <ul className="list-group">
                                 <li className="list-group-item d-flex justify-content-center align-items-center">
