@@ -8,6 +8,7 @@ import {
   ProfileView,
   SearchView,
   PostRepartiView,
+  ContactView,
 } from "../pages";
 
 import { MainLayout } from "../layouts";
@@ -18,6 +19,7 @@ const Router = () => {
       <Routes>
         <Route path="/landpage" element={<LandPageView />} />
         <Route element={<MainLayout />}>
+          <Route path="/Contact" element={<ContactView />} />
           <Route path="/Post" element={<PostRepartiView />} />
           <Route path="/Search" element={<SearchView />} />
           <Route path="/perfil" element={<ProfileView />} />

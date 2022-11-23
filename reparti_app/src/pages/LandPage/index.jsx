@@ -164,7 +164,7 @@ const LandPage = () => {
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingSix">
                                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        👉🏼 Paso #3
+                                        👉🏼 Paso N° 3
                                         </button>
                                     </h2>
                                     <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -198,7 +198,7 @@ const LandPage = () => {
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
                             <img className="img-fluid" src={index.logoNegro} alt="" />
-                            <p className="m-3 fs-5">📣 Pensado para poder unir pedidos y RepartiDev desde la comodidad de tu Condominio. <strong className="text-warning">📲 ¡Pides o repartes sin salir de tu condominio¡ 📦</strong></p> 
+                            <p className="m-3 fs-5">📣 Pensado para poder unir pedidos y soluciones desde la comodidad de tu Condominio. <strong className="text-warning">📲 ¡Pides o repartes sin salir de tu condominio¡ 📦</strong></p> 
                             <h4 className="p-3">RUC: 10467062320</h4>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
