@@ -71,7 +71,7 @@ function Home() {
             >
               Perfil
             </Link>
-            <Link className="list-group-item list-group-item-action fw-bold mt-3 mb-5 rounded-2 shadow">
+            <Link to="/Contact" className="list-group-item list-group-item-action fw-bold mt-3 mb-5 rounded-2 shadow">
               Contáctanos
             </Link>
           </div>
