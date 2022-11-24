@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { TaskForm, TaskCard } from "../../components";
-import { get, post, update } from "../../services";
+import { TaskCard } from "../../components";
+import { get, update } from "../../services";
 import { TaskModel } from "../../models/TaskModel";
 import { AuthContext } from "../../context/AuthContext";
 import index from "../../assets/index";
@@ -26,12 +26,6 @@ function Search() {
             if (task.userId === user.id) return task;
         });
         setTaskList(myUserTasks);
-    }
-
-    async function addTask(text) {
-        const newTask = new TaskModel(null, text, null, null, null, user.id);
-        await post(newTask);
-        await getTasks();
     }
 
     async function updateTask(id, type) {

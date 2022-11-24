@@ -1,14 +1,10 @@
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { TaskForm, TaskCard } from "../../components";
-import { get, post, update } from "../../services";
-import { TaskModel } from "../../models/TaskModel";
 import { AuthContext } from "../../context/AuthContext";
 import index from "../../assets/index";
 
 function Contact() {
     const { user, logout } = useContext(AuthContext);
-    const [taskList, setTaskList] = useState([]);
 
     return (
         <div className="container my-5">
