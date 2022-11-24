@@ -1,5 +1,4 @@
-import { Navigate, Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./index.css";
 import index from "../../assets/index";

@@ -1,48 +1,13 @@
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { TaskForm, TaskCard } from "../../components";
-import { get, post, update } from "../../services";
-import { TaskModel } from "../../models/TaskModel";
 import { AuthContext } from "../../context/AuthContext";
 import index from "../../assets/index";
 
 function Home() {
   const { user, logout } = useContext(AuthContext);
-  const [taskList, setTaskList] = useState([]);
-
-  async function getTasks() {
-    const tasks = await get();
-    const tasksModels = tasks.map((task) => {
-      return new TaskModel(
-        task.id,
-        task.name,
-        task.createdAt,
-        task.doneAt,
-        task.deletedAt,
-        task.userId
-      );
-    });
-    const myUserTasks = tasksModels.filter((task) => {
-      if (task.userId === user.id) return task;
-    });
-    setTaskList(myUserTasks);
-  }
-
-  async function addTask(text) {
-    const newTask = new TaskModel(null, text, null, null, null, user.id);
-    await post(newTask);
-    await getTasks();
-  }
-
-  async function updateTask(id, type) {
-    const body =
-      type === "done" ? { doneAt: new Date() } : { deletedAt: new Date() };
-    await update(id, body);
-    await getTasks();
-  }
-
+ 
   useEffect(() => {
-    getTasks();
+    
     // que provoca el []: Que se ejecute solo una vez
   }, []);
 

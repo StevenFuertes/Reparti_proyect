@@ -73,6 +73,7 @@ const Login = () => {
               name="email"
               value={user.email}
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="mb-2">
@@ -86,6 +87,7 @@ const Login = () => {
               name="password"
               value={user.password}
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="mb-5">
