@@ -5,7 +5,9 @@ import Swal from "sweetalert2";
 import index from "../../assets/index"
 
 function TaskCard(props) {
+	
 	const { user } = useContext(AuthContext);
+
 	const { task, updateTask } = props;
 
 	function statusClass() {
