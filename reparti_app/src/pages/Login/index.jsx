@@ -43,7 +43,7 @@ const Login = () => {
   };
 
   if (isAuth()) {
-    return <Navigate to="/" />;
+    return <Navigate to="/home" />;
   }
 
   return (
@@ -51,7 +51,7 @@ const Login = () => {
     <div className="container mt-1 bg__login">
       <div className="row text-bg-light rounded-2">
         <div className="col p-5">
-          <Link to="../LandPage">
+          <Link to="../">
             <img
               src={index.logoBlanco}
               className="img-fluid"

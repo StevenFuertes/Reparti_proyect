@@ -31,7 +31,7 @@ const MainLayout = () => {
                   </li>
                 </ul>
               </li>
-              <button type="button" class="btn btn-warning mx-1 my-1">Home</button>
+              <Link to="/home" class="btn btn-warning mx-1 my-1">Home</Link>
             </div>
           </div>
         </div>

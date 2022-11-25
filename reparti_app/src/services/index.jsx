@@ -1,22 +1,6 @@
 const urlUsers = "https://6363105e37f2167d6f716e33.mockapi.io/reparti_user";
 const url = "https://6363105e37f2167d6f716e33.mockapi.io/publication";
-// const urlBooks
-// Data de usuarios
 
-// export const getBooks = async (search) => {
-// 	try {
-// 	  const response = await fetch(`${urlBooks}${search}&maxResults=24`);
-// 	  const data = await response.json();
-// 	  return data;
-// 	} catch (error) {
-// 	  console.log("error", error);
-// 	}
-//   };
-  
-  // GET : Listar
-  // POST: Crear
-  // PUT: Actualizar
-  // DELETE: Eliminar
 
   export const get = async () => {
 	try {
@@ -24,10 +8,11 @@ const url = "https://6363105e37f2167d6f716e33.mockapi.io/publication";
 	  const data = await response.json();
 	  return data;
 	} catch (error) {
-	  console.log(error);
+	  return error;
 	}
   };
   
+//   /////////////////////////////////////////////////////
   export const getById = async (id) => {
 	try {
 	  const response = await fetch(url + "/" + id);
@@ -87,6 +72,7 @@ const url = "https://6363105e37f2167d6f716e33.mockapi.io/publication";
   };
   
   // id: Tarea
+  
   export const update = async (id, body) => {
 	try {
 	  const response = await fetch(`${url}/${id}`, {
@@ -103,18 +89,18 @@ const url = "https://6363105e37f2167d6f716e33.mockapi.io/publication";
 	}
   };
   
-  // Para la eliminar un registro unicamente necesito el id
-  export const destroy = async (id) => {
-	try {
-	  const response = await fetch(`${url}/${id}`, {
-		method: "DELETE",
-		headers: {
-		  "Content-type": "application/json",
-		},
-	  });
-	  const data = await response.json();
-	  return data;
-	} catch (error) {
-	  console.log(error);
-	}
-  };
+//   // Para la eliminar un registro unicamente necesito el id
+//   export const destroy = async (id) => {
+// 	try {
+// 	  const response = await fetch(`${url}/${id}`, {
+// 		method: "DELETE",
+// 		headers: {
+// 		  "Content-type": "application/json",
+// 		},
+// 	  });
+// 	  const data = await response.json();
+// 	  return data;
+// 	} catch (error) {
+// 	  console.log(error);
+// 	}
+//   };
