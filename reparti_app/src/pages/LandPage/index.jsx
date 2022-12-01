@@ -77,7 +77,7 @@ const LandPage = () => {
 
         <div
           id="carouselExampleIndicators"
-          className="carousel slide"
+          className="container carousel slide"
           data-bs-ride="true"
         >
           <div className="carousel-indicators">
@@ -330,7 +330,7 @@ const LandPage = () => {
                       aria-expanded="false"
                       aria-controls="collapseSix"
                     >
-                      👉🏼 Paso #3
+                      👉🏼 Paso N° 3
                     </button>
                   </h2>
                   <div
@@ -381,7 +381,7 @@ const LandPage = () => {
           </div>
         </div>
 
-        <div className=" text-white bg-dark rounded-3">
+        <div className="container text-white bg-dark rounded-3">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
               <img className="img-fluid" src={index.logoNegro} alt="" />
