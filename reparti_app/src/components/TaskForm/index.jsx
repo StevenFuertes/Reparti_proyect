@@ -2,12 +2,11 @@ import { useRef, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 function TaskForm(props) {
-
 	const { user } = useContext(AuthContext);
 	const { onSubmitFunction } = props;
 
-	const inputElement    = useRef();
-	const inputPrecio    = useRef();
+	const inputElement = useRef();
+	const inputPrecio = useRef();
 	const inputHorario = useRef();
 
 	function inputKeyPress(event) {
@@ -18,27 +17,48 @@ function TaskForm(props) {
 
 	function addButton() {
 		if (inputElement.current.value === "") return;
-		const element = [inputElement.current.value,inputPrecio.current.value,inputHorario.current.value]
+		const element = [
+			inputElement.current.value,
+			inputPrecio.current.value,
+			inputHorario.current.value,
+		];
 		onSubmitFunction(element);
-		console.log(element)
+		console.log(element);
 		inputElement.current.value = "";
-		inputPrecio.current.value ="" ;
-		inputHorario.current.value ="";
-		
+		inputPrecio.current.value = "";
+		inputHorario.current.value = "";
 	}
 
 	return (
 		<div>
 			<div class="row mb-3">
-                            <div class="col">
-                                <label for="exampleInputNombres" class="form-label fw-bold">Nombres</label>
-                                <input disabled value={user.name} type="text" class="form-control p-3" placeholder="Nombres" aria-label="First name"/>
-                            </div>
-                            <div class="col">
-                                <label for="exampleInputApellidos" class="form-label fw-bold">Apellidos</label>
-                                <input disabled value={user.lastName} type="text" class="form-control p-3" placeholder="Apellidos" aria-label="Last name"/>
-                            </div>
-                        </div>
+				<div class="col">
+					<label for="exampleInputNombres" class="form-label fw-bold">
+						Nombres
+					</label>
+					<input
+						disabled
+						value={user.name}
+						type="text"
+						class="form-control p-3"
+						placeholder="Nombres"
+						aria-label="First name"
+					/>
+				</div>
+				<div class="col">
+					<label for="exampleInputApellidos" class="form-label fw-bold">
+						Apellidos
+					</label>
+					<input
+						disabled
+						value={user.lastName}
+						type="text"
+						class="form-control p-3"
+						placeholder="Apellidos"
+						aria-label="Last name"
+					/>
+				</div>
+			</div>
 			<div class="row mb-3">
 				<div class="col">
 					<label for="exampleInputEmail1" class="form-label fw-bold">
@@ -63,9 +83,8 @@ function TaskForm(props) {
 						type="number"
 						id="Select"
 						class="form-control p-3"
-						placeholder="S/."	
+						placeholder="S/."
 						ref={inputPrecio}
-						
 					/>
 				</div>
 				<div class="col">
