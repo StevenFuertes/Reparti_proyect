@@ -21,6 +21,7 @@ export class TaskModel {
 		this.horario = _horario;
 		this.nameUser = _nameUser;
 		this.tower = _tower;
+		this.condominio = _condominio;
 		if (_id !== null) this.id = _id;
 	}
 
