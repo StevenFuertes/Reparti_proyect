@@ -11,10 +11,10 @@ function TaskCard(props) {
 	return (
 		<tr>
 			<th>
-				<h5>00{user.tower}</h5>
+				<h5>00{task.tower}</h5>
 			</th>
 			<td>
-				<h5 type="text">{user.name}</h5>
+				<h5 type="text">{task.nameUser}</h5>
 			</td>
 			<td>
 				<h5 type="text">S/. {task.precio}</h5>

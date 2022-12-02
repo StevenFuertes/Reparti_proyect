@@ -8,6 +8,9 @@ function TaskForm(props) {
 	const inputElement = useRef();
 	const inputPrecio = useRef();
 	const inputHorario = useRef();
+	const inputName = useRef();
+	const inputTower = useRef();
+	const inputCondominio = useRef()
 
 	function inputKeyPress(event) {
 		if (event.key === "Enter") {
@@ -21,6 +24,9 @@ function TaskForm(props) {
 			inputElement.current.value,
 			inputPrecio.current.value,
 			inputHorario.current.value,
+			inputName.current.value,
+			inputTower.current.value,
+			inputCondominio.current.value,
 		];
 		onSubmitFunction(element);
 		console.log(element);
@@ -43,19 +49,35 @@ function TaskForm(props) {
 						class="form-control p-3"
 						placeholder="Nombres"
 						aria-label="First name"
+						ref={inputName}
 					/>
 				</div>
-				<div class="col">
-					<label for="exampleInputApellidos" class="form-label fw-bold">
-						Apellidos
+				<div class="col-2">
+					<label for="" class="form-label fw-bold">
+						Torre
 					</label>
 					<input
 						disabled
-						value={user.lastName}
+						value={user.tower}
 						type="text"
 						class="form-control p-3"
-						placeholder="Apellidos"
+						placeholder="Tower"
 						aria-label="Last name"
+						ref={inputTower}
+					/>
+				</div>
+				<div class="col-4">
+					<label for="" class="form-label fw-bold">
+						Condominio
+					</label>
+					<input
+						disabled
+						value={user.condominio}
+						type="text"
+						class="form-control p-3"
+						placeholder="Condominio"
+						aria-label="Last name"
+						ref={inputCondominio}
 					/>
 				</div>
 			</div>

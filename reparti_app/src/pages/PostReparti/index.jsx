@@ -6,7 +6,7 @@ import { TaskModel } from "../../models/TaskModel";
 function PostReparti() {
     
     async function addTask(props) {
-        const newTask = new TaskModel(props[0], null, null, null,props[1],props[2]);
+        const newTask = new TaskModel(props[0], null, null, null,props[1],props[2],props[3],props[4],props[5]);
         await post(newTask);     
     }
     useEffect(() => {  
