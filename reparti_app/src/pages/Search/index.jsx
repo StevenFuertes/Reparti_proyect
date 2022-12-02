@@ -3,10 +3,10 @@ import { TaskCard } from "../../components";
 import { CardUser } from "../../components"
 import { get, update } from "../../services";
 import { TaskModel } from "../../models/TaskModel";
-import { AuthContext } from "../../context/AuthContext";
+
 
 function Search() {
-    const { user } = useContext(AuthContext);
+  
     const [taskList, setTaskList] = useState([]);
 
     async function getTasks() {
@@ -19,14 +19,8 @@ function Search() {
                 task.doneAt,
                 task.deletedAt,
                 task.precio,
-                // task.userId
             );
         });
-        // const myUserTasks = tasksModels.filter((task) => {
-        //     if (task.userId === user.id) 
-        //     return task;
-        // });
-        // setTaskList(myUserTasks);
         setTaskList(tasksModels)
     }
 

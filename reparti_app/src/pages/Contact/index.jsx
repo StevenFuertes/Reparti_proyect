@@ -6,7 +6,6 @@ function Contact() {
         <div className="container my-5">
             <div className="row">
                 <CardUser />
-
                 <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 rounded-3 bg-dark">
                     <h2 class=" text-warning text-center fw-bold ff-gotham display-4 mb-5">
                         Te <span class="text-muted"> Escuchamos</span>

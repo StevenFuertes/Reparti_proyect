@@ -2,50 +2,46 @@ import { createContext, useState } from "react";
 
 import { getUsers } from "../services";
 
-
 export const AuthContext = createContext();
 
 export const AuthProvider = (props) => {
+  const { children } = props;
 
-	const { children } = props;
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user")) ?? {}
+  );
 
-	const [user, setUser] = useState(
-		JSON.parse(localStorage.getItem("user")) ?? {}
-	  );
+  async function login(email, password) {
+    const usersDB = await getUsers();
+    const user = usersDB.find(
+      (userDb) => userDb.email === email && userDb.pass === password
+    );
 
-	async function login(email, password) {
+    if (!user) return false;
+    localStorage.setItem("user", JSON.stringify(user));
+    setUser(user);
+    return true;
+  }
 
-		const usersDB = await getUsers();
-		const user = usersDB.find(
-			(userDb) => userDb.email === email && userDb.pass === password
-		  );
+  function logout() {
+    localStorage.clear();
+    setUser({});
+  }
 
-		if (!user) return false;
-		localStorage.setItem("user", JSON.stringify(user));
-		setUser(user);
-		return true;
-	}
+  function isAuth() {
+    return Object.entries(user).length !== 0;
+  }
 
-	function logout() {
-		localStorage.clear();
-		setUser({});
-	}
-
-	// funcion para validar si la session existe
-	function isAuth() {
-		return Object.entries(user).length !== 0;
-	}
-
-	return (
-		<AuthContext.Provider
-			value={{
-				user,
-				login,
-				logout,
-				isAuth,
-			}}
-		>
-			{children}
-		</AuthContext.Provider>
-	);
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        login,
+        logout,
+        isAuth,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 };

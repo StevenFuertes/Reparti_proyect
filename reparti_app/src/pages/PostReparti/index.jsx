@@ -17,7 +17,6 @@ function PostReparti() {
 
     useEffect(() => {
       
-        // que provoca el []: Que se ejecute solo una vez
     }, []);
 
 
