@@ -10,7 +10,7 @@ const LandPage = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
               <div className="container-fluid">
                 <Link className="navbar-brand" >
-                  <img src={index.logoNegro} alt="RepartiDev" width="200" height="80" />
+                  <img className="logo" src={index.logoNegro} alt="RepartiDev" width="200" height="80" />
                 </Link>
                 <Link className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@ const LandPage = () => {
                     <Link className="nav-link active" aria-current="page" href="#">Home</Link>
                     <a className="nav-link" href="#como_funciona">Como Funciona</a>
                     <a className="nav-link" href="#contacto">Servicios</a>
-                    <Link to="../Signup" type="button" className="btn btn-warning mx-1 my-1">Registrarse</Link>
+                    <Link to="../Signup" type="button" className="btn btn-warning mx-2 my-1">Registrarse</Link>
                     <Link to="../login" type="button" className="btn btn-outline-warning mx-1 my-1">Iniciar Sesión</Link>
                   </div>
                 </div>
@@ -35,7 +35,7 @@ const LandPage = () => {
                 <small className="text-dark"> en tu Condominio desde</small>
               </h1>
               <img
-                className="img-fluid mb-5"
+                className="but img-fluid mb-5"
                 src={index.logoBlanco}
                 alt="RepartiDev"
               />
@@ -52,7 +52,7 @@ const LandPage = () => {
                 <Link
                   to="../SignUp"
                   type="button"
-                  className="btn btn-warning p-2 my-3 fs-5"
+                  className="but btn btn-warning p-2 my-3 fs-5"
                 >
                   <img
                     width="30"
@@ -102,7 +102,7 @@ const LandPage = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div className="carousel-inner">
+          <div className="carousel-inner  rounded-3 shadow">
             <div className="carousel-item active">
               <img
                 src={index.condominio_car1}
@@ -367,7 +367,7 @@ const LandPage = () => {
               </p>
               <a
                 href="https://api.whatsapp.com/send?phone=+51985269246&text=Hola, Nececito mas informacion!"
-                className="btn btn-warning fs-5 p-3 rounded-5 text-success"
+                className="but btn btn-warning fs-5 p-3 rounded-5 text-success"
               >
                 <img
                   width="25"
@@ -381,7 +381,7 @@ const LandPage = () => {
           </div>
         </div>
 
-        <div className="container text-white bg-dark rounded-3">
+        <div className="container text-white bg-dark">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
               <img className="img-fluid" src={index.logoNegro} alt="" />
@@ -441,12 +441,12 @@ const LandPage = () => {
                 Atención al Cliente
               </h2>
               <div className=" text-center">
-                <div className="text-white my-2 bg-dark">
-                  <h5>📠 Call Center: 01-6111-6060</h5>
+                <div className="text-muted my-2 bg-dark fs-5">
+                  <h4 className="text-white">📠 Call Center: 01-6116060</h4>
                   Lunes a Domingo de 10:00 a.m. a 7:00 p.m.
                 </div>
-                <div className="text-white mt-5 bg-dark">
-                  <h5>📩 consultas@repartidev.com</h5>
+                <div className="text-muted mt-5 bg-dark fs-5">
+                  <h5 className="text-white">📩 consultas@repartidev.com</h5>
                   Escríbenos, estamos atentos a tus dudas o consultas
                 </div>
               </div>

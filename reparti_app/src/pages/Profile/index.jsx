@@ -16,7 +16,7 @@ function Profile() {
 
       <CardUser/> 
 
-        <div className="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
+        <div className="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 bg-dark rounded-3 text-light">
           <h1 className="fw-bold text-center mb-5 display-4">
             Mi<span className="text-warning"> Perfil</span>
           </h1>
