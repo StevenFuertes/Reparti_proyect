@@ -18,6 +18,7 @@ function Search() {
                 task.doneAt,
                 task.deletedAt,
                 task.precio,
+                task.horario,
                 task.id,
             );
         });
@@ -48,11 +49,13 @@ function Search() {
                   <table class="table text-light">
                         <thead>
                             <tr>
-                                <th scope="col">TORRE</th>
-                                <th scope="col">REPARTI</th>
-                                <th scope="col">PRECIO</th>
-                                <th scope="col">SERVICIO</th>
-                                <th scope="col">WHATSAPP</th>
+                                <th scope="col"><label>Torre</label> </th>
+                                <th scope="col"><label>Reparti</label></th>
+                                <th scope="col"><label>Precio</label></th>
+                                <th scope="col"><label>Servicio</label></th>
+                                <th scope="col"><label>Horario</label></th>
+                                <th scope="col"><label>Whatsapp</label></th>
+                                <th scope="col"><label></label></th>
                             </tr>
                         </thead>
                         <tbody>

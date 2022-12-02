@@ -4,6 +4,7 @@ function TaskForm(props) {
 	const { onSubmitFunction } = props;
 	const inputElement    = useRef();
 	const inputPrecio    = useRef();
+	const inputHorario = useRef();
 
 	function inputKeyPress(event) {
 		if (event.key === "Enter") {
@@ -13,10 +14,12 @@ function TaskForm(props) {
 
 	function addButton() {
 		if (inputElement.current.value === "") return;
-		const element = [inputElement.current.value,inputPrecio.current.value]
+		const element = [inputElement.current.value,inputPrecio.current.value,inputHorario.current.value]
 		onSubmitFunction(element);
+		console.log(element)
 		inputElement.current.value = "";
 		inputPrecio.current.value ="" ;
+		inputHorario.current.value ="";
 		
 	}
 
@@ -55,7 +58,7 @@ function TaskForm(props) {
 					<label for="Select" class="form-label fw-bold">
 						Horario de Atención
 					</label>
-					<select id="Select" class="form-select p-3">
+					<select ref={inputHorario} id="Select" class="form-select p-3">
 						<option class="d-none">Elije una Opción</option>
 						<option>08:00 - 14:00 hs.</option>
 						<option>14:00 - 19:00 hs.</option>

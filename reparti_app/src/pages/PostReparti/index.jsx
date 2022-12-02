@@ -10,7 +10,7 @@ function PostReparti() {
 
 
     async function addTask(props) {
-        const newTask = new TaskModel(props[0], null, null, null,props[1],user.id);
+        const newTask = new TaskModel(props[0], null, null, null,props[1],props[2]);
         await post(newTask);
         
     }
