@@ -22,6 +22,7 @@ function SignUp() {
       data.get("phone"),
       data.get("tower"),
       data.get("dpto"),
+      data.get("condominio")
     );
     await postUser(newUser);
     history("/login");
@@ -102,10 +103,10 @@ function SignUp() {
 
             <div className="row mb-3">
               <div className="col">
-                <label for="Select" className="form-label fw-bold">
+                <label for="condominio" className="form-label fw-bold">
                   Nombre del Condominio
                 </label>
-                <select id="Select" className="form-select p-3">
+                <select id="condominio" name="condominio" className="form-select p-3" required>
                   <option className="d-none">Elije una Opción</option>
                   <option>Las Alondras</option>
                   <option>Las Golondrinas</option>

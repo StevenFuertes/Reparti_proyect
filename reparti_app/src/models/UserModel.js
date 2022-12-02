@@ -11,6 +11,7 @@ export class UserModel {
 		_phone = null,
 		_tower = null,
 		_dpto = null,
+		_condominio = null,
 
 	) {
 		this.id = _id;
@@ -23,6 +24,7 @@ export class UserModel {
 		this.phone = _phone;
 		this.tower = _tower;
 		this.dpto = _dpto;
+		this.condominio = _condominio;
 		this.createdAt = !_createdAt ? new Date() : new Date(_createdAt);
 	}
 

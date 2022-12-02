@@ -14,17 +14,20 @@ function Search() {
         const tasksModels = tasks.map((task) => {
             return new TaskModel(
                 task.id,
-                task.name,
+                task.servicio,
                 task.createdAt,
                 task.doneAt,
                 task.deletedAt,
-                task.userId
+                task.precio,
+                // task.userId
             );
         });
-        const myUserTasks = tasksModels.filter((task) => {
-            if (task.userId === user.id) return task;
-        });
-        setTaskList(myUserTasks);
+        // const myUserTasks = tasksModels.filter((task) => {
+        //     if (task.userId === user.id) 
+        //     return task;
+        // });
+        // setTaskList(myUserTasks);
+        setTaskList(tasksModels)
     }
 
     async function updateTask(id, type) {
@@ -36,7 +39,6 @@ function Search() {
 
     useEffect(() => {
         getTasks();
-        // que provoca el []: Que se ejecute solo una vez
     }, []);
 
     return (
@@ -52,11 +54,11 @@ function Search() {
                   <table class="table text-light">
                         <thead>
                             <tr>
-                                <th scope="col">Torre</th>
-                                <th scope="col">Repartidor</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Servicio</th>
-                                <th scope="col">Whatsapp</th>
+                                <th scope="col">TORRE</th>
+                                <th scope="col">REPARTI</th>
+                                <th scope="col">PRECIO</th>
+                                <th scope="col">SERVICIO</th>
+                                <th scope="col">WHATSAPP</th>
                             </tr>
                         </thead>
                         <tbody>

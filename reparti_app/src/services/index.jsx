@@ -12,22 +12,6 @@ const url = "https://6363105e37f2167d6f716e33.mockapi.io/publication";
 	}
   };
   
-//   /////////////////////////////////////////////////////
-  export const getById = async (id) => {
-	try {
-	  const response = await fetch(url + "/" + id);
-	  console.log(response);
-	  if (response.ok) {
-		const data = await response.json();
-		return data;
-	  } else {
-		return null;
-	  }
-	} catch (error) {
-	  console.log(error);
-	  return null;
-	}
-  };
   
   export const post = async (body) => {
 	try {

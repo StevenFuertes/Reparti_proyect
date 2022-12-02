@@ -34,6 +34,3 @@ const Router = () => {
 
 export default Router;
 
-// {/* <Route path="/todoapp" element={<TodoAppView />} />
-
-// <Route path="/task/:id" element={<TaskView />} /> */}

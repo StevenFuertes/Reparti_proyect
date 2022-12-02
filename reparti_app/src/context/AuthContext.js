@@ -14,9 +14,8 @@ export const AuthProvider = (props) => {
 	  );
 
 	async function login(email, password) {
-		// Traemos toda la data de los usuarios de mockapi:
+
 		const usersDB = await getUsers();
-		// Buscamos dentro de usersDB, el email y password:
 		const user = usersDB.find(
 			(userDb) => userDb.email === email && userDb.pass === password
 		  );
