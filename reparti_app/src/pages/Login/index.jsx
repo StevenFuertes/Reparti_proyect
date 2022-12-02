@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    // null - undefinded - ""
+ 
     if (!user.email || !user.password) {
       Swal.fire({
         title: "Error",
@@ -30,7 +30,7 @@ const Login = () => {
       });
       return;
     }
-    //* Save en localStorage
+
     const inicio = login(user.email, user.password);
 
     if (!inicio) {

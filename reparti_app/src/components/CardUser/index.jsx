@@ -4,7 +4,6 @@ import { useContext } from "react";
 import index from "../../assets/index";
 
 function CardUser() {
-
   const { user, logout } = useContext(AuthContext);
 
   return (

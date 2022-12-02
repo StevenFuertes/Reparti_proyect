@@ -2,9 +2,7 @@ import { useRef } from "react";
 
 function TaskForm(text) {
 	const { onSubmitFunction } = text;
-	
 	const inputElement    = useRef();
-
 
 	function inputKeyPress(event) {
 		if (event.key === "Enter") {
@@ -20,9 +18,6 @@ function TaskForm(text) {
 
 	return (
 		<div>
-
-			{/* //////// INPUT PARA PUBLICAR //////////// */}
-
 			<div class="row mb-3">
 				<div class="col">
 					<label for="exampleInputEmail1" class="form-label fw-bold">
@@ -36,12 +31,8 @@ function TaskForm(text) {
 						ref={inputElement}
 						onKeyPress={inputKeyPress}
 					/>
-
 				</div>
 			</div>
-
-			{/* //////// HORARIO DE ATENCION Y COSTOS //////////// */}
-
 			<div class="row mb-3">
 				<div class="col">
 					<label for="Select" class="form-label fw-bold">
@@ -51,8 +42,7 @@ function TaskForm(text) {
 						type="number"
 						id="Select"
 						class="form-control p-3"
-						placeholder="S/."
-						
+						placeholder="S/."			
 					/>
 				</div>
 				<div class="col">

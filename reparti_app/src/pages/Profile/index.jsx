@@ -8,7 +8,6 @@ function Profile() {
   
   useEffect(() => {
     
-    // que provoca el []: Que se ejecute solo una vez
   }, []);
 
   return (
