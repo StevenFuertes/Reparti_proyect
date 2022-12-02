@@ -1,7 +1,11 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 function TaskForm(props) {
+
+	const { user } = useContext(AuthContext);
 	const { onSubmitFunction } = props;
+
 	const inputElement    = useRef();
 	const inputPrecio    = useRef();
 	const inputHorario = useRef();
@@ -25,6 +29,16 @@ function TaskForm(props) {
 
 	return (
 		<div>
+			<div class="row mb-3">
+                            <div class="col">
+                                <label for="exampleInputNombres" class="form-label fw-bold">Nombres</label>
+                                <input disabled value={user.name} type="text" class="form-control p-3" placeholder="Nombres" aria-label="First name"/>
+                            </div>
+                            <div class="col">
+                                <label for="exampleInputApellidos" class="form-label fw-bold">Apellidos</label>
+                                <input disabled value={user.lastName} type="text" class="form-control p-3" placeholder="Apellidos" aria-label="Last name"/>
+                            </div>
+                        </div>
 			<div class="row mb-3">
 				<div class="col">
 					<label for="exampleInputEmail1" class="form-label fw-bold">
