@@ -9,8 +9,8 @@ function PostReparti() {
     const { user } = useContext(AuthContext);
 
 
-    async function addTask(text) {
-        const newTask = new TaskModel(null, text, null, null, null, user.id);
+    async function addTask(text,precio) {
+        const newTask = new TaskModel(null, text, null, null, precio, user.id);
         await post(newTask);
         
     }
@@ -26,7 +26,7 @@ function PostReparti() {
             <div className="row">
 
                  <CardUser/>
-
+                 
                 <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
                     <h1 class="fw-bold text-center mb-5 display-4">Publicar<span class="text-warning"> RepartiDev</span></h1>
                     <form class="px-4">
@@ -40,15 +40,9 @@ function PostReparti() {
                                 <input disabled value={user.lastName} type="text" class="form-control p-3" placeholder="Apellidos" aria-label="Last name"/>
                             </div>
                         </div>
-
                         <TaskForm onSubmitFunction={addTask} />
-
-
                     </form>
-
-
                 </div>
-
             </div>
         </div>
     );

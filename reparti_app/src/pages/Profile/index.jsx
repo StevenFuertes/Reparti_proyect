@@ -68,12 +68,7 @@ function Profile() {
                 <label for="Select" className="form-label fw-bold">
                   Nombre del Condominio
                 </label>
-                <select id="Select" className="form-select p-3">
-                  <option className="d-none">Elije una Opción</option>
-                  <option>Las Alondras</option>
-                  <option>Las Golondrinas</option>
-                  <option>Las Garzas</option>
-                </select>
+                <input value={user.condominio} className="form-control p-3"/>
               </div>
               <div className="col">
                 <label for="exampleInputDni1" className="form-label fw-bold">
