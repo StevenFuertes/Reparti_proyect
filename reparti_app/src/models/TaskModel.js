@@ -1,20 +1,20 @@
 export class TaskModel {
 
 	constructor(
-		_id = null,
 		_servicio = null,
 		_createdAt = null,
 		_doneAt = null,
 		_deletedAt = null,
 		_precio = null,
+		_id = null,
 	) {
-		if (_id !== null) this.id = _id;
 		if (_servicio !== null) this.servicio = _servicio;
 		this.createdAt =
 			_createdAt === null ? new Date() : new Date(_createdAt);
 		this.doneAt = _doneAt === null ? null : new Date(_doneAt);
 		this.deletedAt = _deletedAt === null ? null : new Date(_deletedAt);
 		this.precio = _precio;
+		if (_id !== null) this.id = _id;
 	}
 
 	timeElapsed(date) {

@@ -13,12 +13,12 @@ function Search() {
         const tasks = await get();
         const tasksModels = tasks.map((task) => {
             return new TaskModel(
-                task.id,
                 task.servicio,
                 task.createdAt,
                 task.doneAt,
                 task.deletedAt,
                 task.precio,
+                task.id,
             );
         });
         setTaskList(tasksModels)

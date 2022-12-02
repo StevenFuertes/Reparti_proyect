@@ -1,8 +1,9 @@
 import { useRef } from "react";
 
-function TaskForm(text) {
-	const { onSubmitFunction } = text;
+function TaskForm(props) {
+	const { onSubmitFunction } = props;
 	const inputElement    = useRef();
+	const inputPrecio    = useRef();
 
 	function inputKeyPress(event) {
 		if (event.key === "Enter") {
@@ -12,8 +13,11 @@ function TaskForm(text) {
 
 	function addButton() {
 		if (inputElement.current.value === "") return;
-		onSubmitFunction(inputElement.current.value);
+		const element = [inputElement.current.value,inputPrecio.current.value]
+		onSubmitFunction(element);
 		inputElement.current.value = "";
+		inputPrecio.current.value ="" ;
+		
 	}
 
 	return (
@@ -42,7 +46,9 @@ function TaskForm(text) {
 						type="number"
 						id="Select"
 						class="form-control p-3"
-						placeholder="S/."			
+						placeholder="S/."	
+						ref={inputPrecio}
+						
 					/>
 				</div>
 				<div class="col">
