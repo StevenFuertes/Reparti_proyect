@@ -19,6 +19,9 @@ function Search() {
                 task.deletedAt,
                 task.precio,
                 task.horario,
+                task.nameUser,
+                task.tower,
+                task.condominio,
                 task.id,
             );
         });

@@ -12,16 +12,16 @@ import condominio_car3 from "./image/condominio_car3.jpg";
 import repartidor_dor from "./image/repartidor_dor.jpg";
 
 export default {
-    logoNegro: logoNegro,
-    logoBlanco: logoBlanco,
-    usuario: usuario,
-    whatsapp1: whatsapp1,
-    instagram: instagram,
-    facebook: facebook,
-    youtube: youtube,
-    tik_tok: tik_tok,
-    condominio_car1: condominio_car1,
-    condominio_car2: condominio_car2,
-    condominio_car3: condominio_car3,
-    repartidor_dor: repartidor_dor,
+    logoNegro,
+    logoBlanco,
+    usuario,
+    whatsapp1,
+    instagram,
+    facebook,
+    youtube,
+    tik_tok,
+    condominio_car1,
+    condominio_car2,
+    condominio_car3,
+    repartidor_dor,
 };
