@@ -6,6 +6,7 @@ export class TaskModel {
 		_doneAt = null,
 		_deletedAt = null,
 		_precio = null,
+		_horario = null,
 		_id = null,
 	) {
 		if (_servicio !== null) this.servicio = _servicio;
@@ -14,6 +15,7 @@ export class TaskModel {
 		this.doneAt = _doneAt === null ? null : new Date(_doneAt);
 		this.deletedAt = _deletedAt === null ? null : new Date(_deletedAt);
 		this.precio = _precio;
+		this.horario = _horario;
 		if (_id !== null) this.id = _id;
 	}
 
