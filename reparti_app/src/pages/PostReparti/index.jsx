@@ -9,8 +9,8 @@ function PostReparti() {
     const { user } = useContext(AuthContext);
 
 
-    async function addTask(text,precio) {
-        const newTask = new TaskModel(null, text, null, null, precio, user.id);
+    async function addTask(props) {
+        const newTask = new TaskModel(props[0], null, null, null,props[1],user.id);
         await post(newTask);
         
     }
