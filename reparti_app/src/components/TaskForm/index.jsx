@@ -121,9 +121,9 @@ function TaskForm(props) {
 					</select>
 				</div>
 			</div>
-			<div class="d-grid gap-3 ">
+			<div class="d-grid ">
 				<button
-					class="btn btn-warning fw-bold mt-5"
+					class="btn btn-warning fw-bold mt-5 p-3"
 					type="button"
 					id="button-addon2"
 					onClick={addButton}

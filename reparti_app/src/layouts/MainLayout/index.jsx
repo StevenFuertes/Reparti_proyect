@@ -13,10 +13,10 @@ const MainLayout = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <Link className="navbar-brand"><img src={index.logoNegro} alt="RepartiDev" width="200" height="80" /></Link>
+          <Link className="navbar-brand"><img className="logo" src={index.logoNegro} alt="RepartiDev" width="200" height="80" /></Link>
                    
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="condominio" aria-current="page" href="#" >Condominio : "{user.condominio}"</div>
+            <div className="condominio" aria-current="page" href="#" ><span className="fw-bold text-center text-warning mb-5 display-6">Condominio :</span> "{user.condominio}"</div>
             
             <div class="navbar-nav ms-auto">
               <li class="nav-item dropdown">

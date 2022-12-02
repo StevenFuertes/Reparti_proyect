@@ -46,8 +46,8 @@ function Search() {
                 <CardUser/>
 
                 <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 rounded-3 bg-dark">
-                    <h2 class=" text-warning text-center fw-bold ff-gotham display-4 mb-5">
-                        Lista de <small class="text-muted"> Repartidores</small>
+                    <h2 class=" text-white text-center fw-bold ff-gotham display-4 mb-5">
+                        Lista de <span class="text-warning"> Repartidores</span>
                     </h2>
                   <table class="table text-light">
                         <thead>

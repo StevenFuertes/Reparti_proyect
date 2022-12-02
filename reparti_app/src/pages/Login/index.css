@@ -4,3 +4,10 @@
     background-size: cover;
     background-position: center end;
 }
+
+.bg__login {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}

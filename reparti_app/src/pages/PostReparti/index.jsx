@@ -18,7 +18,7 @@ function PostReparti() {
 
                  <CardUser/>
                  
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-4 bg-dark rounded-3 text-light">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 p-5 bg-dark rounded-3 text-light">
                     <h1 class="fw-bold text-center mb-5 display-4">Publicar<span class="text-warning"> RepartiDev</span></h1>
                     <form class="px-4">
                         <TaskForm onSubmitFunction={addTask} />
