@@ -13,21 +13,21 @@ function TaskCard(props) {
 			<th>
 				<h5>00{task.tower}</h5>
 			</th>
-			<td>
+			<th>
 				<h5 type="text">{task.nameUser}</h5>
-			</td>
-			<td>
+			</th>
+			<th>
 				<h5 type="text">S/. {task.precio}</h5>
-			</td>
+			</th>
 			<th>
 				<h5>{task.servicio}</h5>
 			</th>
 			<th>
 				<h5>{task.horario}</h5>
 			</th>
-			<td>
+			<th>
 			<a href='https://api.whatsapp.com/send?phone=+51985269246&text=Hola, Nececito mas informacion!' className=""><img width="25" className="img-fluid m-1" src={index.whatsapp1} alt="" /></a>
-			</td>
+			</th>
 			<th className="text-muted small col hora">
 				{String(task.timeElapsed(task.createdAt))}
 			</th>
